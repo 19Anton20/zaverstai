@@ -1,0 +1,212 @@
+//обнуляющий стиль
+@import "nullstyle.scss";
+
+
+
+//General\\
+.container {
+
+}
+
+.text {
+	color: #AE7C78;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.subtitle {
+	color: #AE7C78;
+	font-family: Playfair Display;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 48px;
+	letter-spacing: 0.02em;
+}
+
+.tittle {
+	color: #AE7C78;
+	font-family: Playfair Display;
+	font-size: 44px;
+	font-weight: 400;
+	line-height: 59px;
+	&__italic {
+		font-style: italic;
+	}
+}
+
+.button {
+	&__text {
+		color: #FFFFFF;
+		font-family: Montserrat;
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+//Main\\
+.header {
+	&__container {
+
+	}
+
+	&__menu {
+	}
+
+	&__logo-link {
+	}
+
+	&__logo-img {
+	}
+
+	&__list {
+		font-family: Montserrat;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+	}
+
+	&__item {
+	}
+
+	&__link {
+		color: #AE7C78;
+	}
+}
+
+.main {
+}
+.peterburg-bouquets {
+	&__container {
+	}
+	&__content {
+	}
+	&__text {
+		color: #AE7C78;
+		font-family: Montserrat;
+		font-size: 24px;
+		line-height: 29px;
+	}
+	&__button {
+	}
+	&__photos {
+	}
+	&__photo {
+	}
+}
+
+.benefits {
+	&__container {
+	}
+	&__items {
+	}
+	&__item {
+	}
+	&__title {
+		color: #AE7C78;
+		font-family: Montserrat;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+.goods {
+	&__container {
+	}
+	&__content {
+	}
+	&__info {
+	}
+	&__title {
+	}
+	&__size {
+	}
+	&__price {
+	}
+	&__button {
+	}
+	&__picture {
+	}
+}
+
+.categories {
+	&__container {
+	}
+	&__card {
+	}
+	&__subtitle {
+	}
+	&__text {
+	}
+}
+.promotion {
+	&__container {
+	}
+	&__info {
+	}
+	&__title {
+	}
+	&__text {
+	}
+	&__picture {
+	}
+}
+.instruction {
+	&__container {
+	}
+	&__step {
+	}
+	&__title {
+	}
+	&__text {
+	}
+}
+.news {
+	&__container {
+	}
+	&__info {
+	}
+	&__text {
+	}
+	&__socials {
+	}
+	&__pictures {
+	}
+	&__picture {
+	}
+}
+.socials {
+}
+.reviews {
+	&__container {
+	}
+	&__list {
+	}
+	&__item {
+	}
+	&__text {
+	}
+	&__title {
+	}
+}
+.map {
+	&__container {
+	}
+	&__map-image {
+	}
+}
+.footer {
+	&__container {
+	}
+	&__logo {
+	}
+	&__logo-img {
+	}
+	&__menu {
+	}
+	&__item {
+	}
+	&__socials {
+	}
+}
