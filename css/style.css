@@ -76,9 +76,15 @@ h1, h2, h3, h4, h5, h6 {
 .text {
   color: #AE7C78;
   font-family: Montserrat, "Lucida Bright", serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+
+.section-text {
+  color: #AE7C78;
+  font-family: Montserrat, "Lucida Bright", serif;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 .subtitle {
@@ -87,47 +93,49 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-size: 36px;
   line-height: 48px;
-  letter-spacing: 0.02em;
 }
 
-.tittle {
+.title {
   color: #AE7C78;
   font-family: "Playfair Display", Georgia, serif;
   font-size: 44px;
-  font-weight: 400;
   line-height: 59px;
 }
-.tittle__italic {
+.title__italic {
   font-style: italic;
 }
 
 .button__text {
   color: #FFFFFF;
-  font-family: Montserrat, "Lucida Bright", serif;
-  font-size: 16px;
-  line-height: 20px;
 }
 
-.header__list {
-  font-family: Montserrat, "Lucida Bright", serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-}
-.header__link {
-  color: #AE7C78;
-}
-
-.peterburg-bouquets__text {
-  color: #AE7C78;
-  font-family: Montserrat, "Lucida Bright", serif;
-  font-size: 24px;
-  line-height: 29px;
-}
 .benefits__title {
-  color: #AE7C78;
-  font-family: Montserrat, "Lucida Bright", serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+}
+
+.goods__title {
+  font-weight: 500;
+}
+.goods__price {
+  font-weight: 500;
+}
+.categories__text {
+  color: #FFFFFF;
+}
+
+.promotion__title {
+  letter-spacing: 0.02em;
+}
+.promotion__text {
+  color: #FFFFFF;
+}
+.instruction__title {
+  font-weight: 500;
+}
+.reviews__title {
+  font-weight: 500;
+}
+
+.footer__item {
+  color: #FFFFFF;
 }

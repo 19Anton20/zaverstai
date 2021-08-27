@@ -11,9 +11,15 @@
 .text {
 	color: #AE7C78;
 	font-family: Montserrat, "Lucida Bright", serif;
-	font-weight: 400;
 	font-size: 16px;
 	line-height: 20px;
+}
+
+.section-text {
+	color: #AE7C78;
+	font-family: Montserrat, "Lucida Bright", serif;
+	font-size: 24px;
+	line-height: 29px;
 }
 
 .subtitle {
@@ -22,14 +28,12 @@
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 48px;
-	letter-spacing: 0.02em;
 }
 
-.tittle {
+.title {
 	color: #AE7C78;
 	font-family: "Playfair Display", Georgia, serif;
 	font-size: 44px;
-	font-weight: 400;
 	line-height: 59px;
 	&__italic {
 		font-style: italic;
@@ -37,12 +41,7 @@
 }
 
 .button {
-	&__text {
-		color: #FFFFFF;
-		font-family: Montserrat, "Lucida Bright", serif;
-		font-size: 16px;
-		line-height: 20px;
-	}
+	&__text {color: #FFFFFF;}
 }
 
 //Main\\
@@ -61,17 +60,13 @@
 	}
 
 	&__list {
-		font-family: Montserrat, "Lucida Bright", serif;
-		font-size: 16px;
-		font-weight: 400;
-		line-height: 20px;
+		
 	}
 
 	&__item {
 	}
 
 	&__link {
-		color: #AE7C78;
 	}
 }
 
@@ -83,10 +78,6 @@
 	&__content {
 	}
 	&__text {
-		color: #AE7C78;
-		font-family: Montserrat, "Lucida Bright", serif;
-		font-size: 24px;
-		line-height: 29px;
 	}
 	&__button {
 	}
@@ -103,13 +94,7 @@
 	}
 	&__item {
 	}
-	&__title {
-		color: #AE7C78;
-		font-family: Montserrat, "Lucida Bright", serif;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 20px;
-	}
+	&__title {font-weight: 500;}
 }
 .goods {
 	&__container {
@@ -118,12 +103,11 @@
 	}
 	&__info {
 	}
-	&__title {
-	}
+	&__title {font-weight: 500;}
 	&__size {
 	}
-	&__price {
-	}
+
+	&__price {font-weight: 500;}
 	&__button {
 	}
 	&__picture {
@@ -137,18 +121,15 @@
 	}
 	&__subtitle {
 	}
-	&__text {
-	}
+	&__text {color: #FFFFFF;}
 }
 .promotion {
 	&__container {
 	}
 	&__info {
 	}
-	&__title {
-	}
-	&__text {
-	}
+	&__title {letter-spacing: 0.02em;}
+	&__text {color: #FFFFFF;}
 	&__picture {
 	}
 }
@@ -157,8 +138,7 @@
 	}
 	&__step {
 	}
-	&__title {
-	}
+	&__title {font-weight: 500;}
 	&__text {
 	}
 }
@@ -187,8 +167,7 @@
 	}
 	&__text {
 	}
-	&__title {
-	}
+	&__title {font-weight: 500;}
 }
 .map {
 	&__container {
@@ -205,8 +184,7 @@
 	}
 	&__menu {
 	}
-	&__item {
-	}
+	&__item {color: #FFFFFF;}
 	&__socials {
 	}
 }
