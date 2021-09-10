@@ -90,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-top: 80px;
 }
 
 .container {
@@ -116,6 +117,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-size: 36px;
   line-height: 48px;
+  text-align: center;
 }
 
 .title {
@@ -131,6 +133,18 @@ h1, h2, h3, h4, h5, h6 {
 .button {
   display: inline-block;
   background: #D89999;
+  width: 285px;
+  height: 80px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .button__text {
   color: #FFFFFF;
@@ -171,6 +185,91 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-grid;
   display: grid;
   gap: 80px;
+}
+.wrapper-top {
+  display: -ms-grid;
+  display: grid;
+  gap: 50px;
+}
+.peterburg-bouquets__container {
+  min-height: 465px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.peterburg-bouquets__text {
+  margin-top: 25px;
+}
+.peterburg-bouquets__button {
+  margin-top: 65px;
+}
+.peterburg-bouquets__photo-1 {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+.peterburg-bouquets__photo-2 {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.benefits__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+.benefits__item {
+  position: relative;
+}
+.benefits__item-1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+}
+.benefits__item-1::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 82px;
+  height: 52px;
+  bottom: 50px;
+  left: -100px;
+  background: url("../img/icons/lorry.svg") no-repeat;
+}
+.benefits__item-2 {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 3;
+  grid-column: 6/9;
+}
+.benefits__item-2::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 82px;
+  height: 52px;
+  bottom: 50px;
+  left: -70px;
+  background: url("../img/icons/bouquet.svg") no-repeat;
+}
+.benefits__item-3 {
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 3;
+  grid-column: 10/13;
+}
+.benefits__item-3::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 82px;
+  height: 52px;
+  bottom: 50px;
+  left: -80px;
+  background: url("../img/icons/camera.svg") no-repeat;
 }
 .benefits__title {
   font-weight: 500;

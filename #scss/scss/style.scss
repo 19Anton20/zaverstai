@@ -4,6 +4,19 @@
 
 
 //General\\
+@mixin pseudo {
+	position: absolute;
+	content: '';
+	display: block;
+}
+
+@mixin benefits__item {
+	@include pseudo;
+	width: 82px;
+	height: 52px;
+	bottom: 50px;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -11,6 +24,7 @@
 	padding-top: 25px;
 	&__main {
 		align-self: center;
+		margin-top: 80px;
 	}
 }
 
@@ -38,6 +52,7 @@
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 48px;
+	text-align: center;
 }
 
 .title {
@@ -53,7 +68,15 @@
 .button {
 	display: inline-block;
 	background: #D89999;
-	&__text {color: #FFFFFF;}
+	width: 285px;
+	height: 80px;
+	border-radius: 50px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	&__text {
+		color: #FFFFFF;
+	}
 }
 
 //Main\\
@@ -103,10 +126,7 @@
 .main {
 	display: grid;
 	gap: 80px;
-	&__peterburg-bouquets {
-		
-	}
-	&__benefits {
+	&__wrapper-top {
 		
 	}
 	&__goods {
@@ -132,28 +152,72 @@
 	}
 }
 
+.wrapper-top {
+	display: grid;
+	gap: 50px;
+	&__peterburg-bouquets {
+		
+	}
+	&__benefits {
+		
+	}
+}
 
 .peterburg-bouquets {
 	&__container {
+		min-height: 465px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
 	}
 	&__content {
 	}
 	&__text {
+		margin-top: 25px;
 	}
 	&__button {
+		margin-top: 65px;
 	}
-	&__photos {
+	&__photo-1 {
+		align-self: end;
 	}
-	&__photo {
+	&__photo-2 {
+		align-self: start;
 	}
 }
 
 .benefits {
 	&__container {
-	}
-	&__items {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		gap: 20px;
 	}
 	&__item {
+		position: relative;
+	}
+	&__item-1 {
+		grid-column: 2/5;
+		&::before {
+			@include benefits__item;
+			left: -100px;
+			background: url("../img/icons/lorry.svg") no-repeat;
+		}
+	}
+	&__item-2 {
+		grid-column: 6/9;
+		&::before {
+			@include benefits__item;
+			left: -70px;
+			background: url("../img/icons/bouquet.svg") no-repeat;
+		}
+	}
+	&__item-3 {
+		grid-column: 10/13;
+		&::before {
+			@include benefits__item;
+			left: -80px;
+			background: url("../img/icons/camera.svg") no-repeat;
+		}
 	}
 	&__title {font-weight: 500;}
 }
