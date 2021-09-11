@@ -17,6 +17,15 @@
 	bottom: 50px;
 }
 
+@mixin instruction__step {
+	@include pseudo;
+	width: 100px;
+	height: 50px;
+	margin-left: -50px;
+	left: 50%;
+	bottom: 100px;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -53,6 +62,10 @@
 	font-size: 36px;
 	line-height: 48px;
 	text-align: center;
+	letter-spacing: 0.02em;
+	&--mb {
+		margin-bottom: 35px;
+	}
 }
 
 .title {
@@ -130,7 +143,6 @@
 		
 	}
 	&__goods {
-		
 	}
 	&__categories {
 		
@@ -223,17 +235,45 @@
 }
 .goods {
 	&__container {
+		width: 800px;
+		margin: 0 auto;
+		position: relative;
 	}
 	&__content {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+		margin-bottom: 30px;
+		&::after {
+			@include pseudo;
+			z-index: 100;
+			width: 200px;
+			height: 50px;
+			left: 340px;
+			bottom: -70px;
+			background: url("../img/icons/arrow-left.svg") no-repeat, 
+							url("../img/icons/arrow-right.svg") 70px 0 no-repeat;
+		}
 	}
 	&__info {
 	}
-	&__title {font-weight: 500;}
+	&__title {
+		font-weight: 500;
+		margin-top: 30px;
+	}
+
+	&__text {
+		margin-top: 20px;
+	}
+
 	&__size {
+		margin: 25px 0;
 	}
 
 	&__price {font-weight: 500;}
+
 	&__button {
+		margin-top: 65px;
 	}
 	&__picture {
 	}
@@ -241,30 +281,112 @@
 
 .categories {
 	&__container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		min-height: 440px;
+		gap: 20px;
 	}
 	&__card {
+		display: block;
+		border-radius: 10px;
+		display: flex;
+  		flex-direction: column;
+  		justify-content: center;
+	}
+	&__card-1 {
+		background: linear-gradient(0deg, rgba(174, 124, 120, 0.6), rgba(174, 124, 120, 0.6)), url(../img/wedding.jpg) no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	&__card-2 {
+		background: linear-gradient(0deg, rgba(174, 124, 120, 0.6), rgba(174, 124, 120, 0.6)), url(../img/peonies.jpg) no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	&__card-3 {
+		background: linear-gradient(0deg, rgba(174, 124, 120, 0.6), rgba(174, 124, 120, 0.6)), url(../img/choice.jpg) no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 	&__subtitle {
+		color: #FFF;
 	}
-	&__text {color: #FFFFFF;}
+	&__text {
+		text-align: center;
+		margin-top: 8px;
+		color: #FFF;
+	}
 }
+
 .promotion {
 	&__container {
+		height: 390px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 	}
 	&__info {
+		padding-left: 100px;
+		background: #AE7C78;
+		padding-top: 40px;
 	}
-	&__title {letter-spacing: 0.02em;}
-	&__text {color: #FFFFFF;}
+	&__title {
+		letter-spacing: 0.02em;
+		color: #FFFFFF;
+	}
+	&__text {
+		color: #FFFFFF;
+		margin-top: 25px;
+		max-width: 390px;
+	}
 	&__picture {
 	}
 }
-.instruction {
+.instruction {border: 1px solid #000;
 	&__container {
+		min-height: 230px;
+	}
+	&__steps {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		gap: 20px;
+		
 	}
 	&__step {
+		padding-top: 60px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	&__title-1 {
+		&::before {
+			@include instruction__step;
+			background: url("../img/icons/laptop.svg") center no-repeat;
+		}
+	}
+	&__title-2 {
+		&::before {
+			@include instruction__step;
+			background: url("../img/icons/woman.svg") center no-repeat;
+		}
+	}
+	&__title-3 {
+		&::before {
+			@include instruction__step;
+			background: url("../img/icons/card.svg") center no-repeat;
+		}
+	}
+	&__title-4 {
+		&::before {
+			@include instruction__step;
+			background: url("../img/icons/lorry.svg") center no-repeat;
+		}
 	}
 	&__title {font-weight: 500;}
 	&__text {
+		text-align: center;
+		margin-top: 8px;
 	}
 }
 .news {
@@ -298,6 +420,7 @@
 	&__container {
 	}
 	&__map-image {
+		max-width: 1200px;
 	}
 	&__contacts {
 	}
