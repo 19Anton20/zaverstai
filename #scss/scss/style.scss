@@ -391,40 +391,96 @@
 }
 .news {
 	&__container {
+		display: flex;
 	}
 	&__info {
+		max-width: 390px;
+		padding-top: 70px;
+	}
+	&__subtitle {
+		text-align: left;
 	}
 	&__text {
+		margin-top: 40px;
 	}
 	&__socials {
+		margin-top: 40px;
 	}
 	&__pictures {
+		margin-left: auto;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-auto-flow: dense;
+		gap: 20px;
 	}
 	&__picture {
+		
 	}
+	&__picture-green-bouquet {
+	}
+	&__picture-roses {
+	}
+	&__picture-bouquet-in-paper {
+		grid-row: 1/3;
+		grid-column-end: -1;
+	}
+
 }
 .socials {
+	&__image {
+		display: inline-block;
+		margin-right: 18px;
+	}
 }
 .reviews {
+	border: 1px solid #AE7C78;
+	padding-top: 40px;
 	&__container {
 	}
 	&__list {
+		display: flex;
+		justify-content: space-around;
 	}
 	&__item {
+		max-width: 300px;
+		text-align: center;
 	}
 	&__text {
 	}
-	&__title {font-weight: 500;}
+	&__title {
+		font-weight: 500;
+		margin-top: 15px;
+		margin-bottom: 70px;
+	}
 }
 .map {
 	&__container {
+		width: 100%;
+		height: 640px;
+		position: relative;
+
 	}
 	&__map-image {
 		max-width: 1200px;
+		height: 100%;
 	}
 	&__contacts {
+		padding: 35px 0 0 40px;
+		position: absolute;
+		min-width: 385px;
+		min-height: 520px;
+		background: #F7FAFC;
+		left: 220px;
+		top: 50px;
 	}
-	&__text {font-weight: 500;}
+	&__text {
+		display: inline-block;
+		margin: 15px 0 30px;
+		font-weight: 500;
+	}
+	&__subtitle {
+		text-align: left;
+	}
 }
 
 .contacts {
@@ -434,12 +490,19 @@
 .footer {
 	background: #AE7C78;
 	&__container {
+		min-height: 100px;
+		display: flex;
 	}
 	&__logo {
+		display: block;
 	}
 	&__logo-img {
 	}
 	&__menu {
+		margin: 30px 100px 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
 	}
 	&__item {color: #FFFFFF;}
 	&__socials {

@@ -470,19 +470,115 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 8px;
 }
 
-.reviews__title {
-  font-weight: 500;
+.news__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.news__info {
+  max-width: 390px;
+  padding-top: 70px;
+}
+.news__subtitle {
+  text-align: left;
+}
+.news__text {
+  margin-top: 40px;
+}
+.news__socials {
+  margin-top: 40px;
+}
+.news__pictures {
+  margin-left: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 20px auto;
+  grid-template-columns: auto auto;
+  grid-auto-flow: dense;
+  gap: 20px;
+}
+.news__picture-bouquet-in-paper {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column-span: -1;
+  grid-column-end: -1;
 }
 
+.socials__image {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.reviews {
+  border: 1px solid #AE7C78;
+  padding-top: 40px;
+}
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.reviews__item {
+  max-width: 300px;
+  text-align: center;
+}
+.reviews__title {
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 70px;
+}
+
+.map__container {
+  width: 100%;
+  height: 640px;
+  position: relative;
+}
 .map__map-image {
   max-width: 1200px;
+  height: 100%;
+}
+.map__contacts {
+  padding: 35px 0 0 40px;
+  position: absolute;
+  min-width: 385px;
+  min-height: 520px;
+  background: #F7FAFC;
+  left: 220px;
+  top: 50px;
 }
 .map__text {
+  display: inline-block;
+  margin: 15px 0 30px;
   font-weight: 500;
+}
+.map__subtitle {
+  text-align: left;
 }
 
 .footer {
   background: #AE7C78;
+}
+.footer__container {
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__logo {
+  display: block;
+}
+.footer__menu {
+  margin: 30px 100px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer__item {
   color: #FFFFFF;
