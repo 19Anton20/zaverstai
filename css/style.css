@@ -213,11 +213,15 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  display: block;
+  background: #D89999;
 }
 .peterburg-bouquets__photo-2 {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
+  display: block;
+  background: #D89999;
 }
 
 .benefits__container {
@@ -389,9 +393,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 25px;
   max-width: 390px;
 }
-.instruction {
-  border: 1px solid #000;
-}
 .instruction__container {
   min-height: 230px;
 }
@@ -492,10 +493,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 20px auto;
-  grid-template-columns: auto auto;
+  -ms-grid-columns: 285px 20px 387px;
+  grid-template-columns: 285px 387px;
   grid-auto-flow: dense;
   gap: 20px;
+}
+.news__picture {
+  width: 100%;
+  height: 100%;
 }
 .news__picture-bouquet-in-paper {
   -ms-grid-row: 1;
@@ -562,13 +567,18 @@ h1, h2, h3, h4, h5, h6 {
   background: #AE7C78;
 }
 .footer__container {
+  margin: 0 auto;
   min-height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 40px;
 }
 .footer__logo {
   display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .footer__menu {
   margin: 30px 100px 0;
@@ -579,7 +589,24 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 0;
 }
 .footer__item {
   color: #FFFFFF;
+}
+.footer__socials {
+  min-width: 110px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.footer__socials-image {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer__socials-image:first-child {
+  margin-left: 0;
 }
